@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Righteous&display=swap');
+@import "tailwindcss";
+html,body{
+  background-color:#000;
+  font-family: "Gravitas One", cursive;
+}
+@font-face {
+  font-family: 'PPNeueMontreal-regular';
+  src: url('/src/Fonts/PPNeueMontreal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal-medium';
+  src: url('/src/Fonts/PPNeueMontreal-Medium.ttf') format('truetype');
+ 
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal-semibold';
+  src: url('/src/Fonts/PPNeueMontreal-SemiBold.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal-bold';
+  src: url('/src/Fonts/PPNeueMontreal-Bold.ttf') format('truetype');
+ 
+}
+@font-face {
+  font-family: 'PPNeueMontreal-book';
+  src: url('/src/Fonts/PPNeueMontreal-Book.ttf') format('truetype');
+ 
+}
+canvas {
+  touch-action: none;
+}
+.scratchcard canvas {
+  background-size: cover !important;   /* make it fill the area */
+  background-position: center !important; /* keep it centered */
+}
+.navbar {
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+
+}
+.heading {
+  font-family: 'PPNeueMontreal-semibold', sans-serif;
+
+}
+.semiheading{
+  font-family: 'PPNeueMontreal-regular',sans-serif;
+}
+.semiheading-h{
+  font-family: 'PPNeueMontreal-book',sans-serif;
+}
+.semiheading-bold{
+  font-family: 'PPNeueMontreal-bold',sans-serif;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* move half, second set replaces first */
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+} 
+
+
+
+.background{
+   background-image: url(/public/magicpattern.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+@keyframes bob {
+ from{
+transform: rotate(0deg);
+ }
+  to{
+transform: rotate(360deg);
+ }
+}
+
+.bobround {
+  animation: bob 20s linear infinite;
+} 
+
+
+@keyframes bobrev {
+ from{
+transform: rotate(0deg);
+ }
+  to{
+transform: rotate(-360deg);
+ }
+}
+
+.bobRev {
+  animation: bobrev 20s linear infinite;
+} 
+
+
+
